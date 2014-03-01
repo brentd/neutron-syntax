@@ -34,6 +34,15 @@
   }
 }
 
+.vim-mode.command-mode.editor.is-focused .cursor {
+  background-color: #fff;
+  opacity: 1;
+  &.blink-off {
+    visibility: visible;
+    opacity: 0.2;
+  }
+}
+
 .editor.is-focused .selection .region {
   background-color: #546373;
 }
