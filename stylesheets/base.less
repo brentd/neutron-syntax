@@ -1,9 +1,11 @@
 @import "syntax-variables";
 
 .editor, .editor-colors {
-  line-height: 1.6;
   background-color: @syntax-background-color;
   color: @syntax-text-color;
+  .lines, .line-numbers, .cursor {
+    line-height: 1.5;
+  }
 }
 
 .editor {
