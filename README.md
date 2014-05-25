@@ -2,4 +2,4 @@
 
 Complementing syntax theme for the [Neutron UI](http://atom.io/packages/neutron-ui) package.
 
-**Note:** this theme changes line-height, and there is currently a bug which incorrectly calculates line-height until you switch tabs. If your cursor is out of whack, just switch tabs.
+![Money shot](https://f.cloud.github.com/assets/69169/2317235/17a7ade0-a348-11e3-916d-d991707cce23.png)
