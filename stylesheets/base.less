@@ -21,6 +21,20 @@
     color: @syntax-invisible-character-color;
   }
 
+  &.is-focused {
+    .cursor { border-color: @syntax-cursor-color; }
+    &.vim-mode.command-mode .cursor { background-color: @syntax-cursor-color; }
+
+    .cursor,
+    &.vim-mode.command-mode .cursor {
+      transition: opacity .3s ease-in-out;
+      &.blink-off {
+        visibility: visible;
+        opacity: 0;
+      }
+    }
+  }
+
   .gutter {
     background-color: @syntax-gutter-background-color;
     color: @syntax-gutter-text-color;
@@ -45,15 +59,6 @@
 
   .invisible {
     color: @syntax-text-color;
-  }
-
-  &.is-focused .cursor {
-    border-color: @syntax-cursor-color;
-    transition: opacity .3s ease-in-out;
-    &.blink-off {
-      visibility: visible;
-      opacity: 0;
-    }
   }
 
   .selection .region {
