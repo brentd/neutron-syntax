@@ -1,7 +1,7 @@
 {
   "name": "neutron-syntax",
   "theme": "syntax",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Syntax theme for the Neutron UI theme",
   "repository": "https://github.com/brentd/neutron-syntax",
   "license": "MIT",
