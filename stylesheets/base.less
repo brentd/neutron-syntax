@@ -80,10 +80,10 @@
 }
 
 .keyword {
-  color: @purple;
+  color: @brown;
 
   &.control {
-    color: @purple;
+    color: @brown;
   }
 
   &.operator {
@@ -95,7 +95,7 @@
   }
 
   &.other.unit {
-    color: @orange;
+    color: @cyan;
   }
 }
 
@@ -111,11 +111,14 @@
   }
 
   &.numeric {
-    color: @orange;
+    color: @yellow;
   }
 
-  &.other.color {
+  &.other.color, &.other.color.rgb-value-scss {
     color: @cyan;
+    .punctuation.definition.constant.scss {
+      color: @cyan;
+    }
   }
 
   &.other.symbol {
@@ -123,16 +126,20 @@
   }
 }
 
-.variable {
-  color: @red;
+.variable, .punctuation.definition.variable.php {
+  color: @purple;
 
   &.interpolation {
-    color: darken(@red, 10%);
+    color: darken(@purple, 10%);
   }
 
   &.parameter.function {
     color: @syntax-text-color;
   }
+}
+
+.variable.interpolation.scss {
+  color: @syntax-text-color;
 }
 
 .invalid.illegal {
@@ -162,6 +169,9 @@
     &.comment {
       color: @middle-gray-0;
     }
+    &.tag {
+      color: @red;
+    }
 
     &.string,
     &.variable,
@@ -184,10 +194,12 @@
       color: @purple;
       font-style: italic;
     }
+
   }
 
   &.section.embedded {
-    color: darken(@red, 10%);
+    color: darken(@cyan, 15%);
+    font-weight: bold !important;
   }
 
 }
@@ -203,6 +215,12 @@
     &.any-method {
       color: @blue;
     }
+  }
+  &.type.property-name {
+    color: @blue;
+  }
+  &.constant.property-value {
+    color: @cyan;
   }
 }
 
@@ -221,7 +239,6 @@
 
   &.name.tag {
     color: @red;
-    text-decoration: underline;
   }
 
   &.other.attribute-name {
@@ -253,6 +270,9 @@
   &.separator {
     background-color: @middle-gray-1;
     color: @syntax-text-color;
+  }
+  &.meta.function-call {
+    color: @yellow;
   }
 }
 

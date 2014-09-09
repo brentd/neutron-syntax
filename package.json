@@ -3,9 +3,24 @@
   "theme": "syntax",
   "version": "0.6.1",
   "description": "Syntax theme for the Neutron UI theme",
-  "repository": "https://github.com/brentd/neutron-syntax",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brentd/neutron-syntax"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
-  }
+  },
+  "readme": "# Neutron Syntax Theme for Atom\n\nComplementing syntax theme for the [Neutron UI](http://atom.io/packages/neutron-ui) package.\n\n![Money shot](https://f.cloud.github.com/assets/69169/2317235/17a7ade0-a348-11e3-916d-d991707cce23.png)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/brentd/neutron-syntax/issues"
+  },
+  "homepage": "https://github.com/brentd/neutron-syntax",
+  "_id": "neutron-syntax@0.6.1",
+  "dist": {
+    "shasum": "310109d804ad599870b9605faa05c30e849c8713"
+  },
+  "_resolved": "/var/folders/10/wbtwnvx88xlfj_006s6f3kq80000gn/T/d-114725-55261-v8iv67/package.tgz",
+  "_from": "/var/folders/10/wbtwnvx88xlfj_006s6f3kq80000gn/T/d-114725-55261-v8iv67/package.tgz"
 }
