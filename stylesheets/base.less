@@ -84,6 +84,12 @@
 
   &.control {
     color: @brown;
+    &.at-rule.include {
+      color: @green;
+      .punctuation.definition.keyword.scss {
+        color: @green;
+      }
+    }
   }
 
   &.operator {
@@ -92,6 +98,10 @@
 
   &.other.special-method {
     color: @blue;
+  }
+
+  &.other.important {
+    color: @red;
   }
 
   &.other.unit {
