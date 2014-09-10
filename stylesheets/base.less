@@ -79,23 +79,24 @@
   }
 }
 
+// all the @ signs in keywords below
+.punctuation.definition.keyword.scss {
+  color: inherit !important;
+}
+
 .keyword {
   color: @purple;
-
   &.control {
     color: @brown;
     &.at-rule {
       &.include {
         color: @green;
-        .punctuation.definition.keyword.scss {
-          color: @green;
-        }
       }
       &.import {
         color: @red;
-        .punctuation.definition.keyword.scss {
-          color: @red;
-        }
+      }
+      &.media {
+        color: @yellow;
       }
     }
   }
