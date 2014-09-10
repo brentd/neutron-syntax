@@ -84,10 +84,18 @@
 
   &.control {
     color: @brown;
-    &.at-rule.include {
-      color: @green;
-      .punctuation.definition.keyword.scss {
+    &.at-rule {
+      &.include {
         color: @green;
+        .punctuation.definition.keyword.scss {
+          color: @green;
+        }
+      }
+      &.import {
+        color: @red;
+        .punctuation.definition.keyword.scss {
+          color: @red;
+        }
       }
     }
   }
@@ -157,7 +165,7 @@
   color: @syntax-background-color;
 }
 
-.string {
+.string, .constant.character.escape {
   color: @green;
 
 
