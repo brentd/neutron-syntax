@@ -79,11 +79,27 @@
   }
 }
 
+// all the @ signs in keywords below
+.punctuation.definition.keyword.scss,
+.punctuation.definition.constant.css {
+  color: inherit !important;
+}
+
 .keyword {
   color: @purple;
-
   &.control {
-    color: @purple;
+    color: @brown;
+    &.at-rule {
+      &.include {
+        color: @green;
+      }
+      &.import {
+        color: @red;
+      }
+      &.media {
+        color: @yellow;
+      }
+    }
   }
 
   &.operator {
@@ -94,8 +110,12 @@
     color: @blue;
   }
 
+  &.other.important {
+    color: @red;
+  }
+
   &.other.unit {
-    color: @orange;
+    color: @cyan;
   }
 }
 
@@ -111,11 +131,14 @@
   }
 
   &.numeric {
-    color: @orange;
+    color: @yellow;
   }
 
-  &.other.color {
+  &.other.color, &.other.color.rgb-value-scss {
     color: @cyan;
+    .punctuation.definition.constant.scss {
+      color: @cyan;
+    }
   }
 
   &.other.symbol {
@@ -123,11 +146,11 @@
   }
 }
 
-.variable {
-  color: @red;
+.variable, .punctuation.definition.variable.php {
+  color: @purple;
 
   &.interpolation {
-    color: darken(@red, 10%);
+    color: darken(@purple, 10%);
   }
 
   &.parameter.function {
@@ -135,12 +158,16 @@
   }
 }
 
+.variable.interpolation.scss {
+  color: @syntax-text-color;
+}
+
 .invalid.illegal {
   background-color: @red;
   color: @syntax-background-color;
 }
 
-.string {
+.string, .constant.character.escape {
   color: @green;
 
 
@@ -161,6 +188,9 @@
   &.definition {
     &.comment {
       color: @middle-gray-0;
+    }
+    &.tag {
+      color: @red;
     }
 
     &.string,
@@ -184,10 +214,12 @@
       color: @purple;
       font-style: italic;
     }
+
   }
 
   &.section.embedded {
-    color: darken(@red, 10%);
+    color: darken(@cyan, 15%);
+    font-weight: bold !important;
   }
 
 }
@@ -203,6 +235,12 @@
     &.any-method {
       color: @blue;
     }
+  }
+  &.type.property-name {
+    color: @blue;
+  }
+  &.constant.property-value {
+    color: @cyan;
   }
 }
 
@@ -221,7 +259,6 @@
 
   &.name.tag {
     color: @red;
-    text-decoration: underline;
   }
 
   &.other.attribute-name {
@@ -253,6 +290,9 @@
   &.separator {
     background-color: @middle-gray-1;
     color: @syntax-text-color;
+  }
+  &.meta.function-call {
+    color: @yellow;
   }
 }
 
